@@ -2,6 +2,10 @@
 
 Este repositório público distribui os instaladores Windows, o APK Android e os metadados de atualização do Conecta Check-in.
 
+## Qual arquivo baixar
+
+Abra sempre a [release mais recente](https://github.com/renezit0/conecta-checkin-updates/releases/latest). No Windows, use `Conecta-Check-in-Setup-*-x64.exe`; no Android, use o único `Conecta-Checkin-Android-*.apk` dessa release. Os arquivos `.blockmap` e `latest.yml` são usados pelo atualizador Windows. Os arquivos `Source code` são gerados automaticamente pelo GitHub e não instalam o app.
+
 ## Instalador online permanente
 
 Baixe [Conecta-Check-in-Instalador-Online.exe](https://raw.githubusercontent.com/renezit0/conecta-checkin-updates/main/Conecta-Check-in-Instalador-Online.exe). Este link permanece igual: ao abrir o arquivo, ele consulta a release mais recente, baixa o Setup correspondente, verifica sua integridade e inicia a instalação. Requer internet e Windows com .NET Framework 4.x.
@@ -22,6 +26,6 @@ Os APKs Android seguem sua própria numeração nos nomes dos arquivos. Releases
 
 O [guia de publicação](https://github.com/renezit0/onev2react/blob/main/PUBLICAR-ATUALIZACOES.md) no repositório privado do código traz os comandos completos para compilar, assinar, testar e enviar APKs Android e instaladores Windows.
 
-Para uma atualização **somente Android**, anexe o novo `Conecta-Checkin-Android-X.Y.Z.apk` à release Windows pública mais recente. Para uma atualização **Windows**, crie uma release nova com Setup, `.blockmap` e `latest.yml` da mesma versão; anexe também o APK Android mais recente. Uma release pública sem esses arquivos Windows interromperia a busca de atualizações do instalador Windows.
+Para uma atualização **somente Android**, anexe o novo `Conecta-Checkin-Android-X.Y.Z.apk` à release Windows pública mais recente, confira o download e remova os APKs Android anteriores dessa mesma release. Para uma atualização **Windows**, crie uma release nova com Setup, `.blockmap` e `latest.yml` da mesma versão; anexe também o APK Android mais recente. Uma release pública sem esses arquivos Windows interromperia a busca de atualizações do instalador Windows.
 
 O código-fonte fica no repositório privado do projeto; esta área pública contém apenas os arquivos necessários para instalação e atualização.
